@@ -1,0 +1,55 @@
+bible-web - Read the Word of God from your terminal
+===================================================
+
+bible-web is a set of scripts that uses your pager to output the Word of God in
+the World English Bible translation.
+
+I picked WEB as the translation because it's the only modern translation of the
+Bible that is public domain. 
+
+This project is a fork of kjv. I simply replaced kjv.tsv with web.tsv.
+https://github.com/bontibon/kjv
+
+I didn't follow the name convention of naming the project/binary the same as the
+translation because the word "web" is ambiguous with web browsers. I wanted to
+be clear with what program you're running when you launch bible-web.
+
+
+Installation
+------------
+Edit config.mk to match your local setup. bible-web is installed into /usr/local
+namespace by default.
+
+Afterwards enter the following command to build and install bible-web (if
+necessary as root):
+	make clean install
+
+Running bible-web
+-----------------
+    usage: bible-web [flags] [reference...]
+
+      -l      list books
+      -W      no line wrap
+      -h      show help
+
+      Reference types:
+          <Book>
+              Individual book
+          <Book>:<Chapter>
+              Individual chapter of a book
+          <Book>:<Chapter>:<Verse>[,<Verse>]...
+              Individual verse(s) of a specific chapter of a book
+          <Book>:<Chapter>-<Chapter>
+              Range of chapters in a book
+          <Book>:<Chapter>:<Verse>-<Verse>
+              Range of verses in a book chapter
+          <Book>:<Chapter>:<Verse>-<Chapter>:<Verse>
+              Range of chapters and verses in a book
+
+          /<Search>
+              All verses that match a pattern
+          <Book>/<Search>
+              All verses in a book that match a pattern
+          <Book>:<Chapter>/<Search>
+              All verses in a chapter of a book that match a pattern
+
