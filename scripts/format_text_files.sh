@@ -35,10 +35,10 @@ do
 	sed -i "1s/^\xEF\xBB\xBF//" $i
 done
 
-# replace "The Acts" with "Acts" for the book of Acts to match metadata
+# replace "Acts" with "The Acts" for the book of Acts to match metadata
 for i in 74*.txt
 do
-	sed -i "1s/.*/Acts/" $i
+	sed -i "1s/.*/The Acts/" $i
 	sed -i "1s/^\xEF\xBB\xBF//" $i
 done
 
