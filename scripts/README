@@ -1,0 +1,28 @@
+scripts
+=======
+These are the scripts used to generate web.tsv. These are unnecessary for
+using bible-web. However, they were essential in creating bible-web initially.
+Currently, this directory exists to get these out there. There's a lot
+of work to do before these are considered finished.
+
+create_metadata.py
+------------------
+This creates the metadata.tsv required for compile_tsv.py to generate
+web.tsv.
+
+It requires kjv.tsv from kjv to be in the same directory.
+
+format_text_files.sh
+--------------------
+This reformats the plaintext files you get from the World English Bible
+project a bit to make it easier for compile_tsv.py. The WEB files are
+obviously required in a plaintext directory.
+Currently, the zip of txt files of WEB without the Deuterocanon currently has
+the extra books anyway, so you must remove those.
+These scripts do not support books outside of the 66 books considered canon by
+the majority of, if not all, denominations of Christianity.
+
+compile_tsv.py
+--------------
+This is the script that generates web.tsv. metadata.tsv and the text files
+enerated by format_text_files.sh are requirements for this to run correctly.
