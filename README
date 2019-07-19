@@ -15,6 +15,8 @@ I didn't follow the naming convention of naming the project/binary the same as t
 translation because the word "web" is ambiguous with web browsers. I wanted to
 be clear with what program you're running when you launch bible-web.
 
+The scripts to generate web.tsv are provided, but they are not needed to use
+bible-web.
 
 Installation
 ------------
