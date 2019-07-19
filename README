@@ -7,10 +7,11 @@ the World English Bible translation.
 I picked WEB as the translation because it's the only modern translation of the
 Bible that is public domain. 
 
-This project is a fork of kjv. I simply replaced kjv.tsv with web.tsv.
+This project is a fork of kjv. I simply replaced kjv.tsv with web.tsv after
+generating it with scripts (which will be posted after some refactoring).
 https://github.com/bontibon/kjv
 
-I didn't follow the name convention of naming the project/binary the same as the
+I didn't follow the naming convention of naming the project/binary the same as the
 translation because the word "web" is ambiguous with web browsers. I wanted to
 be clear with what program you're running when you launch bible-web.
 
